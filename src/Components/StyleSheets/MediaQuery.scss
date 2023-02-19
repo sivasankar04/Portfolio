@@ -1,0 +1,117 @@
+.animatedMainTitle {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Gulzar', serif;
+
+    &:hover {
+        animation: skillText linear 1s;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .btnClass {
+        font-size: 10px;
+        text-decoration: none;
+    }
+    .animatedMainTitle {
+        font-size: 18px;
+    }
+
+    .aboutSection {
+
+        .selfDescription,
+        .selfNote {
+            font-size: 15px;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .getText {
+            font-size: 20px;
+        }
+    }
+
+    .projectSection {
+        .projectTitle {
+            font-size: 12px;
+        }
+
+        .projectDescription ,.libraryText {
+            font-size: 10px;
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .projImg {
+            height: 25px
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+    .btnClass {
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .animatedMainTitle {
+        font-size: 25px;
+    }
+
+    .aboutSection {
+
+        .selfDescription,
+        .selfNote {
+            width: 100%;
+            // text-align: justify;
+
+        }
+    }
+
+    .projectSection {
+        .projectTitle,.libraryText {
+            font-size: 15px;
+        }
+
+        .projectDescription {
+            font-size: 12px;
+        }
+
+        .box {
+            width: 80%;
+        }
+
+        .projImg {
+            height: 50px
+        }
+    }
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    .animatedMainTitle {
+        font-size: 25px;
+    }
+
+    .projectSection {
+        .projectTitle {
+            font-size: 15px;
+        }
+
+        .projectDescription {
+            font-size: 14px;
+        }
+
+        .box {
+            width: 80%;
+        }
+
+        .projImg {
+            height: 50px
+        }
+    }
+
+}

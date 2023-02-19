@@ -1,0 +1,118 @@
+.projectSection {
+    font-family: 'Gulzar', serif;
+    color: #9F9D9D;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .projectContainer {
+        width: 80%;
+    }
+
+    .projectDomain {
+        font-size: 20px;
+        letter-spacing: 4px;
+        position: relative;
+    }
+
+    .projectDomain::before {
+        content: attr(data-text);
+        position: absolute;
+        color: orange;
+        -webkit-text-stroke: 1px orange;
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: text-fill 2s ease-in-out alternate infinite;
+    }
+
+    .projectCard {
+        min-width: 340px;
+        min-height: 250px;
+        background-color: beige;
+    }
+
+    .cardTitle {
+        font-size: 20px;
+    }
+
+    .subCardText {
+        font-size: 18px;
+    }
+
+    .box {
+        display: flex;
+        width: 80%;
+        min-height: 200px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 12px orange;
+        transform: translateX(400%);
+        transition: transform 0.9s ease-in-out;
+
+    }
+
+    .parentBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box:nth-of-type(even) {
+        transform: translateX(-400%);
+    }
+
+    .box.show {
+        transform: translateX(0);
+    }
+
+    .projectTitle {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gulzar', serif;
+        letter-spacing: 2px;
+        color: whitesmoke;
+    }
+
+    .projectDescription {
+        word-break: break-word;
+    }
+
+
+    .clickText {
+        font-weight: bold;
+        color: antiquewhite;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: orange;
+            cursor: pointer;
+        }
+    }
+
+    .projImg {
+        height: 100px;
+    }
+
+    .libraryText {
+        color: aliceblue;
+    }
+    .subLibraryText {
+        font-size: 13px;
+    }
+
+    .scrollDown {
+        position: fixed;
+        bottom: 3rem;
+        left: 4rem;
+    }
+
+    .bounce {
+        color: orange;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+    
+}

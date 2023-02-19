@@ -1,0 +1,28 @@
+.skillsSection {
+    color: #9F9D9D;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .skillContainer {
+        width: 80%;
+    }
+
+    .individualSkillName {
+        font-size: 18px;
+    }
+
+    .parentSkill {
+        width: 100%;
+        border-radius: 5px;
+        border: solid 0.5px lightgray;
+    }
+
+    .tabSilldesign {
+        height: 1rem;
+        border-radius: 5px;
+        animation: skillfilling 2s 0.5s forwards ease-in;
+    }
+
+}

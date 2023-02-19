@@ -1,0 +1,51 @@
+.aboutSection {
+    margin-top: 5%;
+
+    .selfDescriptionContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .selfDescription {
+        width: 50%;
+        font-size: 20px;
+        font-family: 'Gentium Book Plus', serif;
+        color: lightgrey;
+        // border: solid ;
+        border-radius: 20px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 3s ease;
+
+        &:hover {
+            transition: all 3s ease;
+            box-shadow: 1px 1px 20px -6px orange;
+        }
+    }
+
+    .contactInfoContainer {
+        width: 100%;
+    }
+
+    .selfnoteContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .selfNote {
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Gulzar', serif;
+        color: #9F9D9D;
+    }
+
+    .getText {
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+}

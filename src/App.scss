@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&family=Gulzar&display=swap');
+
+@import './Components/StyleSheets/Home.scss';
+@import './Components/StyleSheets/Skills.scss';
+@import './Components/StyleSheets/Projects.scss';
+@import './Components/StyleSheets/About.scss';
+@import './Components/StyleSheets/MediaQuery.scss';
+@import './Components/StyleSheets/Keyframes.scss';
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.nameColor {
+    color: orange;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.resumeButton {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    position: relative;
+    right: 7%
+}
+
+.flexClass {
+    flex-wrap: wrap;
+}
+
+.btnClass {
+    text-decoration: none;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
