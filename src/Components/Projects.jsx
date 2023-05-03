@@ -19,13 +19,13 @@ export const Projects = () => {
         setOpen(true);
     }, [])
     useEffect(() => {
-        window.addEventListener("scroll", checkBoxes);
-        checkBoxes();
+        window.addEventListener("scroll", scrollElements);
+        scrollElements();
     })
     const boxes = document.querySelectorAll(".box");
-    const checkBoxes = () => {
+    const scrollElements = () => {
         const triggerBottom = (window.innerHeight / 5) * 4;
-
+        /* to align the cardsfrom the side */
         boxes.forEach((box) => {
             const boxTop = box.getBoundingClientRect().top;
             if (boxTop < triggerBottom) {
@@ -36,6 +36,7 @@ export const Projects = () => {
         })
     }
     window.onscroll = function (ev) {
+        /* to show the scroll icon */
         if (document.getElementsByClassName('scrollDown')[0]) {
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 document.getElementsByClassName('scrollDown')[0].style.display = 'none';
