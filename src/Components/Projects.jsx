@@ -38,7 +38,7 @@ export const Projects = () => {
     window.onscroll = function (ev) {
         /* to show the scroll icon */
         if (document.getElementsByClassName('scrollDown')[0]) {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            if (Math.ceil(window.innerHeight + window.scrollY) >= Math.ceil(document.body.offsetHeight)) {
                 document.getElementsByClassName('scrollDown')[0].style.display = 'none';
             } else {
                 document.getElementsByClassName('scrollDown')[0].style.display = '';
@@ -57,7 +57,7 @@ export const Projects = () => {
                 </Alert>
             </Snackbar>
             <div className='scrollDown'>
-                <div onScroll={onscroll} className="arrow bounce">
+                <div className="arrow bounce">
                     <Icons type="downArrow" />
                 </div>
             </div>
@@ -93,7 +93,7 @@ export const Projects = () => {
                                                         val.showClickMe ?
                                                             <span> ... For more <span className='clickText '>Click here !!</span></span>
                                                             : null}
-                                                    <div className='d-flex mt-3'>
+                                                    <div className='d-flex mt-3 btnDetailContainer'>
                                                         <Button variant="outlined" startIcon={<Icons type="zipFolder" />}>
                                                             <a className='btnClass' href={'../assets/zips/10mb.zip'} download> Clone project</a>
                                                         </Button>

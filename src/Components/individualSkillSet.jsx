@@ -1,17 +1,26 @@
 import { Grid } from "@mui/material";
+import { useEffect, useState } from "react";
 
 export const DevelopingSkillSet = ({ SkillTabArray }) => {
-    const arrayLength = Math.floor(SkillTabArray.length / 2)
-
+    const [skillsArr, setSkillArr] = useState(SkillTabArray ?? []);
+    useEffect(() => {
+        if ((SkillTabArray.length % 2 === 0)) {
+        }else{
+            setSkillArr([...SkillTabArray,''])
+        }
+        
+    }, [])
     return (
         <div className="developSkillSet mt-2 ">
             <Grid className="d-flex justify-content-center" container spacing={4} alignItems="stretch">
                 {
-                    SkillTabArray.length > 3 ? <><Grid item xs={12} sm={5}>{
+                    SkillTabArray.length > 3 ? <>{
                         // eslint-disable-next-line array-callback-return
-                        SkillTabArray.map((val, index) => {
-                            if (index <= arrayLength) {
-                                return (
+                        skillsArr.map((val, index) => {
+                            return (
+                                <Grid item xs={12} sm={6}>
+                                    {
+                                        val?.title?.length&& 
                                     <div key={index} className='mt-2'>
                                         <div className="individualSkillName ">
                                             {val.title}
@@ -21,30 +30,16 @@ export const DevelopingSkillSet = ({ SkillTabArray }) => {
                                             </div>
                                         </div>
                                     </div>
-                                )
-                            }
+                                    }
+                                </Grid>
+                            )
                         })
-                    }</Grid>
-                        <Grid item xs={12} sm={5}>{
-                            // eslint-disable-next-line array-callback-return
-                            SkillTabArray.map((val, index) => {
-                                if (index > arrayLength) {
-                                    return (
-                                        <div key={index} className='mt-2'>
-                                            <div className="individualSkillName ">
-                                                {val.title}
-                                            </div>
-                                            <div className='parentSkill'>
-                                                <div className="tabSilldesign" style={{ width: `${val.percent}%` }} >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                }
-                            })
-                        }</Grid></> : <Grid item xs={12} sm={5}>{
-                            SkillTabArray.map((val, index) => {
-                                return (
+                    }
+                    </> :<div className="w-50">
+                        {
+                        SkillTabArray.map((val, index) => {
+                            return (
+                                <Grid className="p-32" item xs={12} sm={12}>
                                     <div key={index} className='mt-2'>
                                         <div className="individualSkillName ">
                                             {val.title}
@@ -55,9 +50,11 @@ export const DevelopingSkillSet = ({ SkillTabArray }) => {
                                             </div>
                                         </div>
                                     </div>
-                                )
-                            })
-                        }</Grid>
+                                </Grid>
+                            )
+                        })
+                        }
+                    </div>
                 }
 
             </Grid>

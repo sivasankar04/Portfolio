@@ -13,6 +13,7 @@
         font-size: 10px;
         text-decoration: none;
     }
+
     .animatedMainTitle {
         font-size: 18px;
     }
@@ -36,7 +37,8 @@
             font-size: 12px;
         }
 
-        .projectDescription ,.libraryText {
+        .projectDescription,
+        .libraryText {
             font-size: 10px;
         }
 
@@ -44,8 +46,25 @@
             width: 100%;
         }
 
+        .btnClass {
+            display: none;
+        }
+
         .projImg {
             height: 25px
+        }
+
+        .scrollDown {
+            bottom: 5rem;
+            left: 1.5rem;
+        }
+
+        .projectCards {
+            margin-bottom: 5rem;
+
+        }
+        .btnDetailContainer{
+            justify-content: center;
         }
     }
 
@@ -72,7 +91,9 @@
     }
 
     .projectSection {
-        .projectTitle,.libraryText {
+
+        .projectTitle,
+        .libraryText {
             font-size: 15px;
         }
 
@@ -81,7 +102,7 @@
         }
 
         .box {
-            width: 80%;
+            width: 85%;
         }
 
         .projImg {

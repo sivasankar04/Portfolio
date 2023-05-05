@@ -55,21 +55,26 @@ export const SOFTWARE_SKILLS = [
         percent: '85'
     },
     {
-        title: 'Angular',
-        percent: '1'
-    },
-    {
         title: 'React Native',
         percent: '15'
     },
     {
-        title: 'Flutter',
+        title: 'Next-JS',
+        percent: '1'
+    },
+    {
+        title: 'MongoDB',
         percent: '40'
     },
     {
         title: 'Node',
         percent: '2'
     },
+    {
+        title: 'Express',
+        percent: '2'
+    },
+    
 ]
 
 export const ACADEMIC_SKILLS = [
