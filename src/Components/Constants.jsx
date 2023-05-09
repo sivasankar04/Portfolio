@@ -1,20 +1,24 @@
-export const TOPBAR_PAGES = ['Home', 'Skills', 'Projects', 'About'];
+export const TOPBAR_PAGES = ['Home', 'Skills', 'Projects','MyWorks', 'About'];
 
-export const HI_TEXT = `Hi,I'm`
+export const HI_TEXT = `Hi,I'm`;
 
 export const NAME = 'Siva';
 
-export const HOME_TEXT = ' I enjoy building everything from small buisness sites to rich interactive web apps'
+export const HOME_TEXT = ' I enjoy building everything from small buisness sites to rich interactive web apps';
 
-export const MORE_ABOUT_ME = ' More about me'
+export const MORE_ABOUT_ME = ' More about me';
 
-export const PROJECTS_TEXT = 'Projects'
+export const PROJECTS_TEXT = 'Projects';
 
-export const ALERT_TEXT = ' Some Things I’ve Built'
+export const PROJECTS_TEXT_WORKED = 'Projects(Own)';
 
-export const RESUME = `Resume`
+export const ALERT_TEXT = ' Some Things I’ve Built';
 
-export const MY_NAME = '  My name is'
+export const ALERT_TEXT_WORKED = ' Some Things I’ve Worked';
+
+export const RESUME = `Resume`;
+
+export const MY_NAME = '  My name is';
 
 export const FULL_NAME = 'Siva Sankar';
 
@@ -22,11 +26,11 @@ export const SKILLS_TEXT = 'Skills';
 
 export const EXPERIENCE_TEXT = 'Experience';
 
-export const SELF_DESCRIPTION = `I’m a graduate of 2019 from Francis xavier Engineering college at Tirunelveli with a degree in Electronics and Communication Engineering. Interested in the entire frontend spectrum and working on ambitious projects with positive people.. In my free time I like working on open source projects`
+export const SELF_DESCRIPTION = `I’m a graduate of 2019 from Francis xavier Engineering college at Tirunelveli with a degree in Electronics and Communication Engineering. Interested in the entire frontend spectrum and working on ambitious projects with positive people.. In my free time I like working on open source projects`;
 
-export const GET_IN_TOUCH = ` Get in Touch`
+export const GET_IN_TOUCH = ` Get in Touch`;
 
-export const MESSAGE_TEXT = ` Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!!! Text me @ `
+export const MESSAGE_TEXT = ` Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!!! Text me @ `;
 
 export const SECOND_MESSAGE = `I'm currently looking for full-time Software developing or Machine Learning opportunities! If you know of any positions available, If you have any questions, or if you just want to say hi, please feel free to email me at`
 export const MY_MAIL = 'bssankar004@gmail.com';
@@ -200,6 +204,57 @@ export const PROJECTS = [
         }
         ]
     },
+    {
+        domain: 'NODE',
+        projectDetails: [{
+            title: 'Portfolio',
+            used: 'Material UI',
+            link: 'sample',
+            imageUrl: ''
+        }, {
+            title: 'Portfolio',
+            used: 'Material UI',
+            link: 'sample',
+            imageUrl: ''
+        }
+        ]
+    }
+]
+export const PROJECTS2 = [
+    {
+        domain: 'REACT',
+        projectDetails: [
+            {
+                title: 'Portfolio',
+                used: 'Material UI',
+                link: 'sample',
+                library: 'Material UI,Router V6,Bootstrap',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
+                description: 'sample description sdbgnfdfkisgn sdklgjnk krhngkidfjsn vdfksn dkmb vkgndf mgi, mi uhtnkbjnoihgk noiu h rgregore gjnreo jrne gjgnregjnre nekkgn gnre nre gnghng hnn grengre gn greo ghn jngoghn gjhgn rkjnutb hnekj reogbhn on sdf jbsdjvfk joinorf grei nirtuhgoigho iorigh eiurhoituhyiguh tuirheikuberitghrigkuhresigrkiugrgwigurhsgir ghirsughiruhgoew orwgjiorew gjorghoreghoi rghoregorghro grpj[goqkaep[o',
+                showClickMe: true
+            }, {
+                title: 'Portfolio2',
+                link: 'sample',
+                imageUrl: ''
+            }, {
+                title: 'Portfolio2',
+                used: 'Material UI',
+                link: 'sample',
+                imageUrl: ''
+            },
+        ]
+    },
+    {
+        domain: 'REACT NATIVE',
+        projectDetails: [{
+            title: 'Portfolio',
+            used: 'Material UI',
+            link: 'sample',
+            imageUrl: ''
+        }
+        ]
+    },
+   
     {
         domain: 'NODE',
         projectDetails: [{

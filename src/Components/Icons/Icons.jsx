@@ -14,7 +14,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FolderZipOutlinedIcon from '@mui/icons-material/FolderZipOutlined';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
-
+import CloseIcon from '@mui/icons-material/Close';
 export default function Icons({ type }) {
     switch (type) {
         case 'home':
@@ -43,6 +43,8 @@ export default function Icons({ type }) {
             return <FolderZipOutlinedIcon />
         case 'downArrow':
             return <ArrowDownwardIcon />
+        case 'close':
+            return <CloseIcon />
         default:
             return <SentimentVeryDissatisfiedIcon />
     }
