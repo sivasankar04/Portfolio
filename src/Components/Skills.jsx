@@ -51,7 +51,7 @@ export const Skills = () => {
     }
     return (
         <div>
-            {/* <ParticlesComponent pageEffect={RunningSnowDots} id="backgroundContent" /> */}
+            <ParticlesComponent pageEffect={RunningSnowDots} id="backgroundContent" />
             <div className='skillsSection px-5'>
                 <div className='skillContainer'>
                     <div className='d-flex'>

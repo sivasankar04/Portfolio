@@ -47,7 +47,7 @@ export const Projects = () => {
     };
     return (
         <div className='projectSection  px-5'>
-            {/* <ParticlesComponent pageEffect={RunningSnowDots} id="backgroundContent" /> */}
+            <ParticlesComponent pageEffect={RunningSnowDots} id="backgroundContent" />
             <Snackbar anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "right"

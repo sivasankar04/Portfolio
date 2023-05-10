@@ -22,7 +22,7 @@ export const About = () => {
 
     return (
         <div>
-            {/* <ParticlesComponent pageEffect={SnowDots} id="backgroundContent" /> */}
+            <ParticlesComponent pageEffect={SnowDots} id="backgroundContent" />
             <div className='resumeButton me-5 mt-4'>
                 <Button sx={{ color: 'orange', backgroundColor: 'black', borderColor: 'orange', borderRadius: '20px' }} variant="outlined"><a style={{ textDecoration: 'none', color: 'orange' }} href='../assets/pdf/sample.pdf' target={'blank'}>{RESUME}</a></Button>
             </div>
