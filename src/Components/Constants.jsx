@@ -6,7 +6,7 @@ export const NAME = 'Siva';
 
 export const HOME_TEXT = ' I enjoy building everything from small buisness sites to rich interactive web apps';
 
-export const MORE_ABOUT_ME = ' More about me';
+export const MORE_ABOUT_ME = ' More about me...';
 
 export const PROJECTS_TEXT = 'Projects';
 
